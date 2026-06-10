@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Candlelit Events — Intimate Candlelit Clay Experiences in Atlanta</title>
+<meta name="description" content="Intimate candlelit clay workshops and private events in Atlanta. Date nights, birthdays, corporate events and group experiences. Air-dry and kiln-fired pottery sessions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#f7f1e7; --cream-deep:#efe5d4; --card:#fffdf9;
+    --clay:#b5714a; --clay-deep:#8f5435;
+    --gold:#c2974e; --gold-soft:#d9bd86;
+    --ink:#2b211a; --ink-soft:#6c5a4a;
+    --line:rgba(143,84,53,0.16);
+    --dark:#1d150f; --dark2:#2a1d13;
+    --glow:rgba(212,150,70,0.4);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;font-weight:300}
+  h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1.2}
+  img{max-width:100%}
+  a{color:var(--clay-deep)}
+
+  /* ---------- Nav ---------- */
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(29,21,15,0.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(217,189,134,0.18)}
+  .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0.85rem 1.5rem}
+  .nav-brand{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--gold-soft);text-decoration:none;letter-spacing:0.06em}
+  .nav-links{display:flex;gap:1.6rem;align-items:center}
+  .nav-links a{color:#e9dcc4;text-decoration:none;font-size:0.82rem;letter-spacing:0.14em;text-transform:uppercase}
+  .nav-links a:hover{color:var(--gold-soft)}
+  .nav-cta{border:1px solid var(--gold);padding:0.45rem 1.1rem;border-radius:2rem;color:var(--gold-soft)!important}
+  .nav-toggle{display:none;background:none;border:none;color:var(--gold-soft);font-size:1.6rem;cursor:pointer}
+
+  /* ---------- Hero ---------- */
+  header{background:radial-gradient(ellipse at 50% 120%, var(--dark2) 0%, var(--dark) 65%);color:var(--cream);text-align:center;padding:9.5rem 1.5rem 6rem;position:relative;overflow:hidden}
+  header::after{content:"";position:absolute;left:50%;bottom:-140px;transform:translateX(-50%);width:520px;height:280px;background:radial-gradient(ellipse, var(--glow) 0%, transparent 70%);pointer-events:none}
+  .flame{font-size:1.7rem;margin-bottom:1.2rem;display:inline-block;animation:flicker 3s ease-in-out infinite}
+  @keyframes flicker{0%,100%{opacity:.95;transform:scale(1)}50%{opacity:.75;transform:scale(1.06)}}
+  .eyebrow{font-size:0.78rem;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:1.1rem}
+  header h1{font-size:clamp(2.4rem,6vw,4rem);color:#f6ecd9;margin-bottom:1.2rem}
+  header h1 em{color:var(--gold-soft);font-style:italic}
+  .hero-sub{max-width:620px;margin:0 auto 2.4rem;color:#cdbfa8;font-size:1.06rem}
+  .btn{display:inline-block;text-decoration:none;font-size:0.85rem;letter-spacing:0.18em;text-transform:uppercase;padding:0.95rem 2.3rem;border-radius:2.5rem;transition:all .25s}
+  .btn-gold{background:linear-gradient(135deg,var(--gold) 0%,#a87c34 100%);color:#fff8ea}
+  .btn-gold:hover{filter:brightness(1.1);transform:translateY(-1px)}
+  .btn-ghost{border:1px solid rgba(217,189,134,0.5);color:var(--gold-soft);margin-left:0.8rem}
+  .btn-ghost:hover{border-color:var(--gold-soft)}
+
+  /* ---------- Sections ---------- */
+  section{padding:5rem 1.5rem}
+  .wrap{max-width:1100px;margin:0 auto}
+  .sec-eyebrow{font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--clay);text-align:center;margin-bottom:0.8rem}
+  .sec-title{font-size:clamp(1.9rem,4vw,2.7rem);text-align:center;margin-bottom:1rem;color:var(--ink)}
+  .sec-intro{max-width:640px;margin:0 auto 3rem;text-align:center;color:var(--ink-soft);font-size:1.02rem}
+  .divider{width:64px;height:1px;background:var(--gold);margin:1.4rem auto 0}
+
+  /* ---------- Story ---------- */
+  .story{background:var(--card)}
+  .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
+  .story-text p{margin-bottom:1.1rem;color:var(--ink-soft)}
+  .story-text p:first-of-type::first-letter{font-family:'Cormorant Garamond',serif;font-size:3.1rem;float:left;line-height:0.85;padding-right:0.5rem;color:var(--clay)}
+  .story-quote{background:linear-gradient(160deg,var(--dark) 0%,var(--dark2) 100%);border-radius:14px;padding:2.6rem 2.2rem;color:#e9dcc4;position:relative}
+  .story-quote p{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-style:italic;line-height:1.5}
+  .story-quote footer{margin-top:1.4rem;font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-soft)}
+
+  /* ---------- Tiers ---------- */
+  .tiers{background:var(--cream-deep)}
+  .tier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;align-items:stretch}
+  .tier{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:2.3rem 1.9rem;display:flex;flex-direction:column;position:relative;transition:transform .25s, box-shadow .25s}
+  .tier:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(43,33,26,0.12)}
+  .tier.featured{background:linear-gradient(170deg,var(--dark) 0%,var(--dark2) 100%);color:#e9dcc4;border-color:rgba(217,189,134,0.3)}
+  .tier-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff8ea;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;padding:0.3rem 1rem;border-radius:2rem;white-space:nowrap}
+  .tier-num{font-size:0.72rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--clay);margin-bottom:0.5rem}
+  .tier.featured .tier-num{color:var(--gold-soft)}
+  .tier h3{font-size:1.65rem;margin-bottom:0.2rem}
+  .tier-tag{font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--ink-soft);margin-bottom:1.2rem}
+  .tier.featured .tier-tag{color:#cdbfa8}
+  .tier-price{font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:var(--clay-deep);margin-bottom:0.1rem}
+  .tier.featured .tier-price{color:var(--gold-soft)}
+  .tier-per{font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:1.5rem}
+  .tier.featured .tier-per{color:#a8987f}
+  .tier p.desc{font-size:0.94rem;color:var(--ink-soft);margin-bottom:1.4rem}
+  .tier.featured p.desc{color:#cdbfa8}
+  .tier ul{list-style:none;margin-bottom:1.6rem;flex-grow:1}
+  .tier li{padding:0.42rem 0;font-size:0.92rem;border-bottom:1px dashed var(--line);color:var(--ink-soft)}
+  .tier.featured li{border-color:rgba(217,189,134,0.18);color:#cdbfa8}
+  .tier li::before{content:"✦";color:var(--gold);margin-right:0.6rem;font-size:0.7rem}
+  .tier-cta{text-align:center}
+  .tier-cta .btn{padding:0.75rem 1.8rem;font-size:0.78rem}
+  .btn-outline{border:1px solid var(--clay);color:var(--clay-deep)}
+  .btn-outline:hover{background:var(--clay);color:#fff8ea}
+  .tier-note{text-align:center;margin-top:2.4rem;font-size:0.88rem;color:var(--ink-soft);font-style:italic}
+
+  /* ---------- How it works ---------- */
+  .how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+  .how-step{text-align:center;padding:1.6rem 1.1rem}
+  .how-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--gold);margin-bottom:0.5rem}
+  .how-step h3{font-size:1.2rem;margin-bottom:0.5rem}
+  .how-step p{font-size:0.9rem;color:var(--ink-soft)}
+
+  /* ---------- Occasions ---------- */
+  .occasions{background:var(--card)}
+  .occ-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+  .occ{border:1px solid var(--line);border-radius:12px;padding:1.7rem 1.5rem;background:var(--cream)}
+  .occ h3{font-size:1.25rem;margin-bottom:0.4rem;color:var(--clay-deep)}
+  .occ p{font-size:0.9rem;color:var(--ink-soft)}
+
+  /* ---------- Booking ---------- */
+  .booking{background:linear-gradient(170deg,var(--dark) 0%,var(--dark2) 100%);color:#e9dcc4}
+  .booking .sec-eyebrow{color:var(--gold-soft)}
+  .booking .sec-title{color:#f6ecd9}
+  .booking .sec-intro{color:#cdbfa8}
+  form{max-width:680px;margin:0 auto}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-bottom:1.1rem}
+  .form-full{margin-bottom:1.1rem}
+  label{display:block;font-size:0.76rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:0.4rem}
+  input,select,textarea{width:100%;padding:0.85rem 1rem;border-radius:8px;border:1px solid rgba(217,189,134,0.3);background:rgba(247,241,231,0.06);color:#f1e8d6;font-family:'Jost',sans-serif;font-size:0.95rem}
+  input::placeholder,textarea::placeholder{color:#8c7c66}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+  select{appearance:none;background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3e%3cpath d='M1 1l5 5 5-5' stroke='%23d9bd86' fill='none' stroke-width='1.5'/%3e%3c/svg%3e");background-repeat:no-repeat;background-position:right 1rem center}
+  select option{background:var(--dark2);color:#f1e8d6}
+  textarea{min-height:120px;resize:vertical}
+  .form-submit{text-align:center;margin-top:1.8rem}
+  .form-submit .btn{border:none;cursor:pointer;font-family:'Jost',sans-serif}
+  .form-note{text-align:center;font-size:0.82rem;color:#a8987f;margin-top:1.2rem}
+
+  /* ---------- Policy ---------- */
+  .policy .wrap{max-width:760px}
+  .policy-item{border-left:2px solid var(--gold);padding:0.2rem 0 0.2rem 1.4rem;margin-bottom:1.6rem}
+  .policy-item h3{font-size:1.2rem;margin-bottom:0.3rem}
+  .policy-item p{font-size:0.93rem;color:var(--ink-soft)}
+
+  /* ---------- Footer ---------- */
+  footer.site{background:var(--dark);color:#cdbfa8;text-align:center;padding:3.5rem 1.5rem 2.5rem}
+  footer.site .brand{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--gold-soft);margin-bottom:0.8rem}
+  footer.site p{font-size:0.9rem;margin-bottom:0.35rem}
+  footer.site a{color:var(--gold-soft);text-decoration:none}
+  footer.site a:hover{text-decoration:underline}
+  .cities{font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;color:#8c7c66;margin-top:1.2rem}
+  .fineprint{font-size:0.72rem;color:#6f614f;margin-top:1.6rem}
+
+  /* ---------- Mobile ---------- */
+  @media (max-width:860px){
+    .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(29,21,15,0.98);flex-direction:column;padding:1.2rem;gap:1rem}
+    .nav-links.open{display:flex}
+    .nav-toggle{display:block}
+    .story-grid,.tier-grid,.how-grid,.occ-grid,.form-row{grid-template-columns:1fr}
+    .btn-ghost{margin-left:0;margin-top:0.8rem}
+    header{padding-top:7.5rem}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top">Creative Candlelit Events</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <div class="nav-links">
+      <a href="#story">Our Story</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#how">How It Works</a>
+      <a href="#policy">Booking Info</a>
+      <a class="nav-cta" href="#request">Request an Event</a>
+    </div>
+  </div>
+</nav>
+
+<header id="top">
+  <span class="flame">🕯️</span>
+  <p class="eyebrow">Atlanta · Clay Workshops &amp; Private Events</p>
+  <h1>Slow down. Create.<br><em>By candlelight.</em></h1>
+  <p class="hero-sub">Intimate clay experiences where the noise of the day fades away — just your hands, the clay, and the present moment. Workshops, date nights, birthdays, and private events across the Atlanta area.</p>
+  <a class="btn btn-gold" href="#request">Request Your Event</a>
+  <a class="btn btn-ghost" href="#experiences">Explore Experiences</a>
+</header>
+
+<section class="story" id="story">
+  <div class="wrap">
+    <p class="sec-eyebrow">Our Story</p>
+    <h2 class="sec-title">It started with quiet hands</h2>
+    <div class="divider"></div>
+    <div class="story-grid" style="margin-top:3rem">
+      <div class="story-text">
+        <p>My story with clay didn't start in a studio. It started with my hands, some quiet, and a feeling I couldn't quite name. The moment your hands touch the material, the noise of the day just fades. No notifications, no deadlines, no rushing.</p>
+        <p>Over time I trained, deepened my craft, and kept that passion close. Becoming a mother changed everything — I wanted to create something meaningful, a place where people could slow down, use their hands, and actually be present.</p>
+        <p>That's how Creative Candlelit Events was born: warm, candlelit gatherings where people come together not just to make something beautiful, but to feel something. Whether it's a date night, a solo escape, or a new friendship forming over a shared table — something real always happens in that room.</p>
+      </div>
+      <div class="story-quote">
+        <p>"In a world full of noise, I believe people can feel the difference. And that difference is what Creative Candlelit Events is built on."</p>
+        <footer>— Kristina Munvez, Founder &amp; Clay Artist</footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tiers" id="experiences">
+  <div class="wrap">
+    <p class="sec-eyebrow">Choose Your Experience</p>
+    <h2 class="sec-title">Three ways to gather</h2>
+    <p class="sec-intro">Every experience includes a fully prepared candlelit space, relaxing music, all tools and materials, and Kristina's personal guidance. Pick the format that fits your evening.</p>
+    <div class="tier-grid">
+
+      <div class="tier">
+        <p class="tier-num">Option One</p>
+        <h3>The Social</h3>
+        <p class="tier-tag">Free-spirited &amp; relaxed</p>
+        <p class="tier-price">$85</p>
+        <p class="tier-per">per guest · ~2 hours</p>
+        <p class="desc">An open, unguided creative evening. Explore, experiment, and make whatever your heart suggests — perfect for first-timers and casual groups.</p>
+        <ul>
+          <li>Air-dry clay (approx. 2 lb per guest)</li>
+          <li>Pottery tools &amp; decorative elements — stones, shells, crystals</li>
+          <li>Candlelit atmosphere &amp; relaxing music</li>
+          <li>Light refreshments</li>
+          <li>Take your creation home the same evening</li>
+        </ul>
+        <p class="tier-cta"><a class="btn btn-outline" href="#request">Request This Experience</a></p>
+      </div>
+
+      <div class="tier">
+        <p class="tier-num">Option Two</p>
+        <h3>The Maker</h3>
+        <p class="tier-tag">Functional &amp; lasting</p>
+        <p class="tier-price">$130</p>
+        <p class="tier-per">per guest · ~2 hours</p>
+        <p class="desc">Create real, usable pottery — mugs, bowls, plates, vases — glazed and kiln-fired. Drink your morning coffee from something you made.</p>
+        <ul>
+          <li>Real pottery clay &amp; professional tools</li>
+          <li>Food-safe clear glaze &amp; two kiln firings</li>
+          <li>Each piece individually hand-finished by the artist</li>
+          <li>Candlelit atmosphere &amp; light refreshments</li>
+          <li>Pieces collected from the studio once glazed &amp; fired</li>
+        </ul>
+        <p class="tier-cta"><a class="btn btn-outline" href="#request">Request This Experience</a></p>
+      </div>
+
+      <div class="tier featured">
+        <span class="tier-badge">The Full Evening</span>
+        <p class="tier-num">Option Three</p>
+        <h3>The Signature Evening</h3>
+        <p class="tier-tag">An evening, not a class</p>
+        <p class="tier-price">$195</p>
+        <p class="tier-per">per guest · 3 hours</p>
+        <p class="desc">Our most immersive experience — a fully hosted sensory ritual from a welcome toast to a final reveal, designed for celebrations worth remembering.</p>
+        <ul>
+          <li>Welcome toast on arrival &amp; curated table setting</li>
+          <li>Blindfolded first touch — meet the clay through your senses</li>
+          <li>Kiln-fired pottery with gold accents, gems &amp; crystals</li>
+          <li>Light bites throughout the evening</li>
+          <li>Closing toast, shared reveal &amp; keepsake photos</li>
+        </ul>
+        <p class="tier-cta"><a class="btn btn-gold" href="#request">Request This Experience</a></p>
+      </div>
+
+    </div>
+    <p class="tier-note">Every event is tailored to your group — beverage options, group size, and special touches are arranged directly when planning your event.</p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <p class="sec-eyebrow">How It Works</p>
+    <h2 class="sec-title">From request to candlelight</h2>
+    <div class="divider"></div>
+    <div class="how-grid" style="margin-top:3rem">
+      <div class="how-step">
+        <p class="how-num">1</p>
+        <h3>Request</h3>
+        <p>Send your preferred date, group size, and experience through the form below.</p>
+      </div>
+      <div class="how-step">
+        <p class="how-num">2</p>
+        <h3>Plan</h3>
+        <p>We confirm details together — location, timing, beverages, and any personal touches.</p>
+      </div>
+      <div class="how-step">
+        <p class="how-num">3</p>
+        <h3>Reserve</h3>
+        <p>A 50% deposit secures your date. Materials are ordered specifically for your event.</p>
+      </div>
+      <div class="how-step">
+        <p class="how-num">4</p>
+        <h3>Gather</h3>
+        <p>Arrive to a fully prepared candlelit space. Slow down, create, and enjoy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="occasions">
+  <div class="wrap">
+    <p class="sec-eyebrow">Occasions</p>
+    <h2 class="sec-title">Made for your moment</h2>
+    <div class="divider"></div>
+    <div class="occ-grid" style="margin-top:3rem">
+      <div class="occ"><h3>Date Nights</h3><p>A romantic, hands-on evening by candlelight — far more memorable than dinner and a movie.</p></div>
+      <div class="occ"><h3>Birthdays</h3><p>Celebrate with something to keep. Private group sessions tailored to the guest of honor.</p></div>
+      <div class="occ"><h3>Corporate &amp; Team Events</h3><p>Bring your team out of their inbox and into the present moment. Calm, creative team building.</p></div>
+      <div class="occ"><h3>Girls' Nights &amp; Friends</h3><p>Gather your people around a shared table for an evening of conversation and creation.</p></div>
+      <div class="occ"><h3>Family Sessions</h3><p>Clay experiences for all ages — kids work with air-dry clay, crystals, and glass stones.</p></div>
+      <div class="occ"><h3>Collaborations</h3><p>Studios, venues, and brands — let's create a candlelit experience for your audience.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="request">
+  <div class="wrap">
+    <p class="sec-eyebrow">Request an Event</p>
+    <h2 class="sec-title">Let's plan your evening</h2>
+    <p class="sec-intro">Tell us about your event and we'll get back to you within 1–2 business days with availability and next steps.</p>
+    <form action="https://formsubmit.co/creative.candlelit.events@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Event Request — creativecandlelitevents.com">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://creativecandlelitevents.com/thank-you.html">
+      <input type="text" name="_honey" style="display:none">
+      <div class="form-row">
+        <div>
+          <label for="f-name">Your Name *</label>
+          <input id="f-name" type="text" name="Name" placeholder="Full name" required>
+        </div>
+        <div>
+          <label for="f-email">Email *</label>
+          <input id="f-email" type="email" name="Email" placeholder="you@email.com" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <label for="f-phone">Phone</label>
+          <input id="f-phone" type="tel" name="Phone" placeholder="(555) 555-5555">
+        </div>
+        <div>
+          <label for="f-date">Preferred Date</label>
+          <input id="f-date" type="date" name="Preferred Date">
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <label for="f-exp">Experience *</label>
+          <select id="f-exp" name="Experience" required>
+            <option value="" disabled selected>Choose an experience</option>
+            <option>The Social — $85 per guest</option>
+            <option>The Maker — $130 per guest</option>
+            <option>The Signature Evening — $195 per guest</option>
+            <option>Not sure yet — please advise</option>
+          </select>
+        </div>
+        <div>
+          <label for="f-size">Group Size *</label>
+          <select id="f-size" name="Group Size" required>
+            <option value="" disabled selected>Number of guests</option>
+            <option>2–5 guests</option>
+            <option>6–9 guests</option>
+            <option>10–14 guests</option>
+            <option>15+ guests</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-full">
+        <label for="f-occ">Occasion</label>
+        <select id="f-occ" name="Occasion">
+          <option value="" disabled selected>What are we celebrating?</option>
+          <option>Date night</option>
+          <option>Birthday</option>
+          <option>Corporate / team event</option>
+          <option>Friends gathering</option>
+          <option>Family session</option>
+          <option>Collaboration inquiry</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-full">
+        <label for="f-msg">Tell us more</label>
+        <textarea id="f-msg" name="Message" placeholder="Anything we should know — special requests, questions, your vision for the evening..."></textarea>
+      </div>
+      <div class="form-submit">
+        <button class="btn btn-gold" type="submit">Send Event Request</button>
+      </div>
+      <p class="form-note">Prefer to reach out directly? Email <a href="mailto:creative.candlelit.events@gmail.com" style="color:var(--gold-soft)">creative.candlelit.events@gmail.com</a> or DM <a href="https://www.instagram.com/creative.candlelit.events.atl" target="_blank" rel="noopener" style="color:var(--gold-soft)">@creative.candlelit.events.atl</a></p>
+    </form>
+  </div>
+</section>
+
+<section class="policy" id="policy">
+  <div class="wrap">
+    <p class="sec-eyebrow">Booking &amp; Payment</p>
+    <h2 class="sec-title">Good to know</h2>
+    <div class="divider"></div>
+    <div style="margin-top:3rem">
+      <div class="policy-item">
+        <h3>Reserving your date</h3>
+        <p>A 50% deposit is required to confirm your booking and reserve your date. Until the deposit is received, the date is not held and remains available for other bookings.</p>
+      </div>
+      <div class="policy-item">
+        <h3>Remaining balance</h3>
+        <p>The remaining 50% is due no later than the start of your event — online in advance or on-site before the event begins. For groups, the balance is collected from the group organizer.</p>
+      </div>
+      <div class="policy-item">
+        <h3>Cancellations &amp; rescheduling</h3>
+        <p>Cancellations 14 or more days before the event: deposit fully refunded. Less than 14 days: deposit is retained, as materials are ordered specifically for your event. You may reschedule once at no charge with at least 14 days' notice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <p class="brand">Creative Candlelit Events</p>
+  <p>Email: <a href="mailto:creative.candlelit.events@gmail.com">creative.candlelit.events@gmail.com</a></p>
+  <p>Instagram: <a href="https://www.instagram.com/creative.candlelit.events.atl" target="_blank" rel="noopener">@creative.candlelit.events.atl</a></p>
+  <p class="cities">Atlanta · Kennesaw · Marietta · Woodstock · Acworth · Alpharetta</p>
+  <p class="fineprint">© 2026 Creative Candlelit Events · Intimate candlelit clay experiences · Workshops &amp; private events</p>
+</footer>
+
+</body>
+</html>
